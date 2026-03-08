@@ -1,6 +1,7 @@
 from flask import Flask, render_template, request, send_file
 import pandas as pd
 import joblib
+import os
 
 app = Flask(__name__)
 
@@ -8,8 +9,7 @@ file_path = os.path.join(os.path.dirname(__file__), "Lakmepart2.xlsx")
 data = pd.read_excel(file_path)
 
 
-# Load AI model
-model = joblib.load("price_model.pkl")
+model = joblib.load(os.path.join(os.path.dirname(__file__), "price_model.pkl"))
 
 
 # ================= HOME PAGE =================
@@ -112,4 +112,4 @@ def download():
 
 # ================= RUN =================
 if __name__ == "__main__":
-    app.run(debug=True)
+    app.run(host="0.0.0.0", port=10000)
