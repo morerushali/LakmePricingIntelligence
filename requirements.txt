@@ -1,7 +1,7 @@
-streamlit
+Flask
 pandas
-openpyxl
 numpy
 scikit-learn
-matplotlib
-flask
+joblib
+openpyxl
+gunicorn
