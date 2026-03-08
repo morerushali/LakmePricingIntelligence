@@ -4,10 +4,9 @@ import joblib
 
 app = Flask(__name__)
 
-# Excel Path
-file_path = r"C:/Users/rushu/OneDrive/Desktop/LAKME PRICE INTELLIGENCE/Lakme/Lakmepart2.xlsx"
-
+file_path = os.path.join(os.path.dirname(__file__), "Lakmepart2.xlsx")
 data = pd.read_excel(file_path)
+
 
 # Load AI model
 model = joblib.load("price_model.pkl")
