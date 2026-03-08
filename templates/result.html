@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<title>AI Result</title>
+
+<link rel="stylesheet" href="{{ url_for('static',filename='style.css') }}">
+
+</head>
+
+<body>
+
+<div class="container">
+
+<h2>{{ product }}</h2>
+
+<div class="badge">🤖 AI Optimized Price</div>
+
+<h1>₹ {{ price }}</h1>
+
+<p>MRP : {{ mrp }}</p>
+<p>Discount : {{ discount }}%</p>
+<p>GST : {{ gst }}%</p>
+
+<p>💰 Savings : ₹ {{ savings }}</p>
+<p>📈 Profit Estimate : ₹ {{ profit }}</p>
+<p>🧠 AI Suggested Discount : {{ ai_discount }}%</p>
+<p>🔥 Demand Score : {{ demand_score }}</p>
+
+<p>Confidence : {{ confidence }}</p>
+
+<br>
+
+<a href="/">⬅ Back to Home</a>
+
+</div>
+
+</body>
+</html>

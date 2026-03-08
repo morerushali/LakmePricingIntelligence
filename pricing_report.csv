@@ -1,0 +1,101 @@
+ProductID,ProductName,Category,MRP,Discount,GST,FinalPrice
+1001,Lakme Hair Oil,Haircare,797,30,12,624.848
+1002,Lakme Cleanser,Skincare,1164,10,12,1173.312
+1003,Lakme Hair Oil,Haircare,1212,5,18,1358.652
+1004,Lakme Hair Serum,Haircare,1239,30,12,971.376
+1005,Lakme Conditioner,Haircare,794,15,18,796.382
+1006,Lakme Face Wash,Skincare,780,10,12,786.24
+1007,Lakme Lipstick,Makeup,377,10,18,400.374
+1008,Lakme Hair Mask,Haircare,325,5,12,345.8
+1009,Lakme Conditioner,Haircare,877,30,12,687.568
+1010,Lakme Serum,Skincare,480,30,12,376.32
+1011,Lakme Compact Powder,Makeup,291,20,18,274.704
+1012,Lakme Lipstick,Makeup,900,5,18,1008.9
+1013,Lakme Hair Oil,Haircare,548,15,18,549.644
+1014,Lakme Face Wash,Skincare,1166,25,12,979.44
+1015,Lakme Sunscreen,Skincare,419,25,12,351.96
+1016,Lakme Hair Mask,Haircare,834,15,12,793.968
+1017,Lakme Shampoo,Haircare,1084,20,18,1023.296
+1018,Lakme Serum,Skincare,641,10,18,680.742
+1019,Lakme Hair Serum,Haircare,377,15,12,358.904
+1020,Lakme Sunscreen,Skincare,584,20,12,523.264
+1021,Lakme Lipstick,Makeup,497,10,12,500.976
+1022,Lakme Shampoo,Haircare,824,5,12,876.736
+1023,Lakme Serum,Skincare,530,10,18,562.86
+1024,Lakme Face Wash,Skincare,1048,20,18,989.312
+1025,Lakme Lipstick,Makeup,1203,5,18,1348.563
+1026,Lakme Foundation,Makeup,998,20,12,894.208
+1027,Lakme Moisturizer,Skincare,876,30,12,686.784
+1028,Lakme Mascara,Makeup,313,30,12,245.392
+1029,Lakme Hair Oil,Haircare,911,5,18,1021.231
+1030,Lakme Lipstick,Makeup,508,25,12,426.72
+1031,Lakme Moisturizer,Skincare,1045,15,18,1048.135
+1032,Lakme Moisturizer,Skincare,1099,30,12,861.616
+1033,Lakme Foundation,Makeup,1015,20,12,909.44
+1034,Lakme Face Wash,Skincare,638,20,12,571.648
+1035,Lakme Hair Serum,Haircare,379,15,12,360.808
+1036,Lakme Shampoo,Haircare,385,30,18,318.01
+1037,Lakme Hair Serum,Haircare,936,20,12,838.656
+1038,Lakme Hair Oil,Haircare,412,25,12,346.08
+1039,Lakme Foundation,Makeup,701,30,12,549.584
+1040,Lakme Foundation,Makeup,313,5,12,333.032
+1041,Lakme Hair Serum,Haircare,717,5,12,762.888
+1042,Lakme Sunscreen,Skincare,528,20,18,498.432
+1043,Lakme Sunscreen,Skincare,1110,20,12,994.56
+1044,Lakme Mascara,Makeup,482,5,18,540.322
+1045,Lakme Hair Mask,Haircare,392,30,18,323.792
+1046,Lakme Hair Oil,Haircare,1089,30,12,853.776
+1047,Lakme Shampoo,Haircare,913,20,12,818.048
+1048,Lakme Mascara,Makeup,875,15,12,833.0
+1049,Lakme Foundation,Makeup,1236,30,18,1020.936
+1050,Lakme Moisturizer,Skincare,745,25,12,625.8
+1051,Lakme Hair Oil,Haircare,598,10,18,635.076
+1052,Lakme Lipstick,Makeup,665,30,12,521.36
+1053,Lakme Hair Mask,Haircare,609,15,18,610.827
+1054,Lakme Moisturizer,Skincare,536,20,18,505.984
+1055,Lakme Foundation,Makeup,230,10,12,231.84
+1056,Lakme Eyeliner,Makeup,846,30,12,663.264
+1057,Lakme Serum,Skincare,872,30,18,720.272
+1058,Lakme Serum,Skincare,721,20,18,680.624
+1059,Lakme Compact Powder,Makeup,849,25,12,713.16
+1060,Lakme Conditioner,Haircare,770,20,12,689.92
+1061,Lakme Face Wash,Skincare,712,10,18,756.144
+1062,Lakme Lipstick,Makeup,732,5,18,820.572
+1063,Lakme Hair Mask,Haircare,395,30,18,326.27
+1064,Lakme Cleanser,Skincare,484,20,18,456.896
+1065,Lakme Hair Oil,Haircare,266,5,18,298.186
+1066,Lakme Hair Oil,Haircare,556,25,18,492.06
+1067,Lakme Lipstick,Makeup,1249,15,12,1189.048
+1068,Lakme Sunscreen,Skincare,555,10,12,559.44
+1069,Lakme Compact Powder,Makeup,439,20,12,393.344
+1070,Lakme Moisturizer,Skincare,1066,10,12,1074.528
+1071,Lakme Mascara,Makeup,525,15,18,526.575
+1072,Lakme Lipstick,Makeup,962,20,18,908.128
+1073,Lakme Mascara,Makeup,299,5,12,318.136
+1074,Lakme Eyeliner,Makeup,1242,20,18,1172.448
+1075,Lakme Foundation,Makeup,329,20,12,294.784
+1076,Lakme Foundation,Makeup,382,5,12,406.448
+1077,Lakme Eyeliner,Makeup,828,15,12,788.256
+1078,Lakme Foundation,Makeup,982,20,18,927.008
+1079,Lakme Cleanser,Skincare,992,30,12,777.728
+1080,Lakme Foundation,Makeup,617,15,18,618.851
+1081,Lakme Mascara,Makeup,229,20,18,216.176
+1082,Lakme Hair Oil,Haircare,610,15,12,580.72
+1083,Lakme Hair Oil,Haircare,749,5,12,796.936
+1084,Lakme Serum,Skincare,258,5,18,289.218
+1085,Lakme Sunscreen,Skincare,881,5,12,937.384
+1086,Lakme Cleanser,Skincare,1282,25,18,1134.57
+1087,Lakme Foundation,Makeup,1022,20,12,915.712
+1088,Lakme Face Wash,Skincare,240,25,18,212.4
+1089,Lakme Hair Mask,Haircare,439,30,12,344.176
+1090,Lakme Eyeliner,Makeup,750,25,12,630.0
+1091,Lakme Sunscreen,Skincare,693,25,18,613.305
+1092,Lakme Hair Oil,Haircare,769,20,12,689.024
+1093,Lakme Serum,Skincare,1120,10,12,1128.96
+1094,Lakme Conditioner,Haircare,933,20,18,880.752
+1095,Lakme Eyeliner,Makeup,902,10,18,957.924
+1096,Lakme Lipstick,Makeup,590,20,12,528.64
+1097,Lakme Hair Mask,Haircare,1127,25,12,946.68
+1098,Lakme Shampoo,Haircare,227,10,12,228.816
+1099,Lakme Foundation,Makeup,561,15,18,562.683
+1100,Lakme Compact Powder,Makeup,352,15,12,335.104

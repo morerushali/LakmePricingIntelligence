@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<title>Analytics Dashboard</title>
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+<link rel="stylesheet" href="{{ url_for('static',filename='style.css') }}">
+
+</head>
+
+<body class="dashboard">
+
+<h2>📊 Lakmé AI Pricing Dashboard</h2>
+
+<h3>🔥 Top Premium Product: {{ top_product }}</h3>
+
+<canvas id="priceChart"></canvas>
+<canvas id="profitChart"></canvas>
+<canvas id="discountChart"></canvas>
+<canvas id="demandChart"></canvas>
+
+<br>
+
+<a href="/">⬅ Back to Home</a> |
+<a href="/download">📥 Download Report</a>
+
+
+<script id="chart-data" type="application/json">
+
+{
+"labels": {{ labels | tojson }},
+"mrp": {{ mrp | tojson }},
+"final": {{ final | tojson }},
+"profit": {{ profit | tojson }},
+"discount": {{ discount | tojson }},
+"demand": {{ demand | tojson }}
+}
+
+</script>
+
+<script>
+
+const data =
+JSON.parse(document.getElementById("chart-data").textContent)
+
+const labels=data.labels
+
+
+new Chart(document.getElementById("priceChart"),{
+type:"bar",
+data:{labels:labels,
+datasets:[
+{label:"MRP",data:data.mrp},
+{label:"AI Price",data:data.final}
+]}
+})
+
+
+new Chart(document.getElementById("profitChart"),{
+type:"line",
+data:{labels:labels,
+datasets:[
+{label:"Profit",data:data.profit}
+]}
+})
+
+
+new Chart(document.getElementById("discountChart"),{
+type:"pie",
+data:{labels:labels,
+datasets:[
+{label:"Discount",data:data.discount}
+]}
+})
+
+
+new Chart(document.getElementById("demandChart"),{
+type:"radar",
+data:{labels:labels,
+datasets:[
+{label:"Demand Score",data:data.demand}
+]}
+})
+
+</script>
+
+</body>
+</html>

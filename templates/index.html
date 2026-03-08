@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<title>Lakmé AI Pricing</title>
+
+<link rel="stylesheet" href="{{ url_for('static',filename='style.css') }}">
+
+</head>
+
+<body>
+
+<div class="container">
+
+<h2>✨ Lakmé AI Price Intelligence</h2>
+
+<input type="text" id="searchBox" placeholder="Search Product">
+
+<form action="/predict" method="post">
+
+<select name="product_id" id="productSelect" required>
+
+<option value="">Select Product</option>
+
+{% for product in products %}
+
+<option value="{{ product['ProductID'] }}">
+{{ product['ProductName'] }} - ₹{{ product['MRP'] }}
+</option>
+
+{% endfor %}
+
+</select>
+
+<input id="discount" placeholder="Discount %" readonly>
+<input id="gst" placeholder="GST %" readonly>
+
+<button type="submit">Generate Smart Price</button>
+
+</form>
+
+<br>
+
+<a href="/dashboard">📊 View Dashboard</a>
+
+</div>
+
+<script id="product-data" type="application/json">
+{{ products | tojson }}
+</script>
+
+<script>
+
+const products =
+JSON.parse(document.getElementById("product-data").textContent)
+
+document.getElementById("productSelect")
+.addEventListener("change",function(){
+
+let id=parseInt(this.value)
+
+let p=products.find(x=>x.ProductID===id)
+
+if(p){
+discount.value=p.Discount
+gst.value=p.GST
+}
+
+})
+
+
+const searchBox=document.getElementById("searchBox")
+const select=document.getElementById("productSelect")
+
+searchBox.addEventListener("keyup",function(){
+
+let filter=searchBox.value.toLowerCase()
+
+for(let option of select.options){
+
+let text=option.text.toLowerCase()
+
+option.style.display = text.includes(filter) ? "" : "none"
+
+}
+
+})
+
+</script>
+
+</body>
+</html>

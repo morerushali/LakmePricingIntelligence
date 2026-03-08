@@ -1,0 +1,56 @@
+body{
+font-family:Arial;
+background:#f4f6f9;
+margin:0;
+}
+
+.container{
+width:400px;
+margin:60px auto;
+background:white;
+padding:25px;
+border-radius:12px;
+box-shadow:0 5px 15px rgba(0,0,0,0.2);
+text-align:center;
+}
+
+input,select{
+width:90%;
+padding:10px;
+margin:8px;
+border-radius:6px;
+border:1px solid #ccc;
+}
+
+button{
+padding:10px 20px;
+background:#ff4d88;
+color:white;
+border:none;
+border-radius:6px;
+cursor:pointer;
+}
+
+button:hover{
+background:#e6005c;
+}
+
+.dashboard{
+text-align:center;
+padding:40px;
+}
+
+canvas{
+max-width:900px;
+margin:20px auto;
+display:block;
+}
+
+.badge{
+background:#28a745;
+color:white;
+padding:6px 12px;
+border-radius:20px;
+display:inline-block;
+margin:10px;
+}
