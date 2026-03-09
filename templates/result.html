@@ -1,12 +1,106 @@
+```html
 <!DOCTYPE html>
 <html>
+
 <head>
 
-<title>Result</title>
+<title>Smart Price Result</title>
 
-<link rel="stylesheet" href="{{ url_for('static',filename='style.css') }}">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+<style>
+
+body{
+font-family:'Poppins',sans-serif;
+background:linear-gradient(135deg,#667eea,#764ba2);
+height:100vh;
+display:flex;
+justify-content:center;
+align-items:center;
+margin:0;
+}
+
+/* MAIN CARD */
+
+.container{
+width:420px;
+background:rgba(255,255,255,0.95);
+padding:35px;
+border-radius:20px;
+box-shadow:0 10px 40px rgba(0,0,0,0.25);
+text-align:center;
+}
+
+/* PRODUCT TITLE */
+
+h2{
+margin-bottom:5px;
+color:#333;
+}
+
+/* AI BADGE */
+
+.badge{
+display:inline-block;
+background:linear-gradient(135deg,#ff9966,#ff5e62);
+color:white;
+padding:6px 14px;
+border-radius:20px;
+font-size:13px;
+margin-bottom:15px;
+}
+
+/* PRICE */
+
+.price{
+font-size:42px;
+font-weight:600;
+color:#2ecc71;
+margin-bottom:15px;
+}
+
+/* DATA GRID */
+
+.data{
+background:#f7f8fc;
+padding:12px;
+margin:8px 0;
+border-radius:8px;
+font-size:14px;
+display:flex;
+justify-content:space-between;
+}
+
+/* HIGHLIGHT */
+
+.highlight{
+font-weight:500;
+color:#444;
+}
+
+/* BACK BUTTON */
+
+a{
+display:inline-block;
+margin-top:18px;
+padding:10px 18px;
+background:linear-gradient(135deg,#ff758c,#ff7eb3);
+color:white;
+border-radius:8px;
+text-decoration:none;
+font-size:14px;
+transition:0.3s;
+}
+
+a:hover{
+transform:scale(1.05);
+box-shadow:0 5px 15px rgba(0,0,0,0.2);
+}
+
+</style>
 
 </head>
+
 
 <body>
 
@@ -14,22 +108,49 @@
 
 <h2>{{ product }}</h2>
 
-<div class="badge">🤖 Optimized Price</div>
+<div class="badge">🤖 AI Optimized Price</div>
 
-<h1>₹ {{ price }}</h1>
+<div class="price">₹ {{ price }}</div>
 
-<p>MRP : {{ mrp }}</p>
-<p>Discount : {{ discount }}%</p>
-<p>GST : {{ gst }}%</p>
+<div class="data">
+<span class="highlight">MRP</span>
+<span>₹ {{ mrp }}</span>
+</div>
 
-<p>💰 Savings : ₹ {{ savings }}</p>
-<p>📈 Profit Estimate : ₹ {{ profit }}</p>
-<p>🧠 Suggested Discount : {{ ai_discount }}%</p>
-<p>🔥 Demand Score : {{ demand_score }}</p>
+<div class="data">
+<span class="highlight">Discount</span>
+<span>{{ discount }}%</span>
+</div>
 
-<p>Confidence : {{ confidence }}</p>
+<div class="data">
+<span class="highlight">GST</span>
+<span>{{ gst }}%</span>
+</div>
 
-<br>
+<div class="data">
+<span class="highlight">💰 Savings</span>
+<span>₹ {{ savings }}</span>
+</div>
+
+<div class="data">
+<span class="highlight">📈 Profit Estimate</span>
+<span>₹ {{ profit }}</span>
+</div>
+
+<div class="data">
+<span class="highlight">🧠 Suggested Discount</span>
+<span>{{ ai_discount }}%</span>
+</div>
+
+<div class="data">
+<span class="highlight">🔥 Demand Score</span>
+<span>{{ demand_score }}</span>
+</div>
+
+<div class="data">
+<span class="highlight">Confidence</span>
+<span>{{ confidence }}</span>
+</div>
 
 <a href="/">⬅ Back to Home</a>
 
@@ -37,3 +158,4 @@
 
 </body>
 </html>
+```
